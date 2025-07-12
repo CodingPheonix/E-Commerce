@@ -2,11 +2,13 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Cancel01Icon } from "@/app/Components/SVGs";
+import { useCart } from "@/app/context/CartContext";
 
 export default function ProductPage({ params }) {
     const unwrapped = React.use(params)
     const id = unwrapped.id
     const router = useRouter()
+    const { cart, setCart } = useCart()
 
     const [productDetails, setProductDetails] = useState(null);
     const [loading, setLoading] = useState(true);
@@ -27,13 +29,17 @@ export default function ProductPage({ params }) {
         getProduct();
     }, [id]);
 
+    useEffect(() => {
+        console.log("Cart changed:", cart);
+    }, [cart]);
+
     if (loading) return <div className="p-6 text-center">Loading...</div>;
     if (!productDetails) return <div className="p-6 text-center text-red-600">Product not found.</div>;
 
     return (
         <main className="p-6 max-w-4xl mx-auto">
             <div className="bg-white p-6 rounded-xl shadow-md flex flex-col gap-6">
-                <div onClick={() => {router.back()}} className="w-full my-1 flex justify-end">
+                <div onClick={() => { router.back() }} className="w-full my-1 flex justify-end">
                     <Cancel01Icon />
                 </div>
                 <div className="flex gap-7">
@@ -46,7 +52,11 @@ export default function ProductPage({ params }) {
                             <p className="italic text-gray-600">Category: {productDetails.category}</p>
                         </div>
                         <footer className="text-black my-1 flex gap-3">
-                            <button className="px-4 py-2 rounded-md bg-[#64FFDA] font-semibold text-white hover:bg-[#03e4b0]">Add to Cart</button>
+                            <button
+                                onClick={() => {
+                                    setCart((prev) => [...prev, id]);
+                                }}
+                                className="px-4 py-2 rounded-md bg-[#64FFDA] font-semibold text-white hover:bg-[#03e4b0]">Add to Cart</button>
                             <button className="px-4 py-2 rounded-md bg-[#64FFDA] font-semibold text-white hover:bg-[#03e4b0]">Buy now</button>
                         </footer>
                     </div>

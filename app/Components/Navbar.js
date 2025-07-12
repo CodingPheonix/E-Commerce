@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Cart_icon from './Cart_icon'
 
 const Navbar = () => {
     return (
@@ -9,6 +10,9 @@ const Navbar = () => {
                 <div className="space-x-6">
                     <Link href="/products" className="hover:underline">Products</Link>
                     <Link href="/categories" className="hover:underline">Categories</Link>
+                    <Link href="/cart">
+                        <Cart_icon />
+                    </Link>
                 </div>
             </div>
         </nav>
