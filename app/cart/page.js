@@ -2,11 +2,17 @@
 import { useEffect, useState } from "react";
 import CartItemCard from "../Components/CartItemCard";
 import { useCart } from "../context/CartContext";
+import Disclaimer from "../Components/Disclaimer";
 
 export default function CartPage() {
     const { cart } = useCart();
     const [cartList, setCartList] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [isPurchasing, setIsPurchasing] = useState(false)
+
+    const Purchase = () => {
+        setIsPurchasing(!isPurchasing)
+    }
 
     useEffect(() => {
         const fetchCartItems = async () => {
@@ -14,7 +20,7 @@ export default function CartPage() {
                 const productPromises = cart.map(async (productId) => {
                     const res = await fetch(`https://fakestoreapi.com/products/${productId}`);
                     const product = await res.json();
-                    return { ...product, quantity: 1 }; 
+                    return { ...product, quantity: 1 };
                 });
                 const detailedItems = await Promise.all(productPromises);
                 setCartList(detailedItems);
@@ -39,6 +45,9 @@ export default function CartPage() {
 
     return (
         <main className="max-w-5xl mx-auto p-6">
+
+            {isPurchasing && (<Disclaimer />)}
+
             <h1 className="text-3xl font-bold mb-6">Your Cart</h1>
 
             {cartList.length === 0 ? (
@@ -53,7 +62,7 @@ export default function CartPage() {
 
                     <div className="text-right mt-8">
                         <h2 className="text-2xl font-bold">Total: ${total.toFixed(2)}</h2>
-                        <button className="mt-4 bg-[#64FFDA] px-6 py-3 rounded-xl text-[#0A192F] font-semibold shadow-md hover:bg-[#52e5c6] transition">
+                        <button onClick={() => { Purchase() }} className="mt-4 bg-[#64FFDA] px-6 py-3 rounded-xl text-[#0A192F] font-semibold shadow-md hover:bg-[#52e5c6] transition">
                             Proceed to Checkout
                         </button>
                     </div>
