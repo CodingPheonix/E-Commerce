@@ -4,9 +4,11 @@ import Image from 'next/image';
 import { SendHorizonal } from 'lucide-react';
 import { v4 as uuidv4 } from 'uuid';
 import { useRouter } from 'next/navigation';
+import { useCart } from '../context/CartContext';
 
 const AIChatAssistant = () => {
     const router = useRouter();
+    const {cart, setCart} = useCart()
 
     // STATES
     const [open, setOpen] = useState(false);
@@ -27,43 +29,62 @@ const AIChatAssistant = () => {
             const result = await response.json();
             console.log("Raw AI result:", result);
 
-            const toolMessage = result.data.messages.find(
-                (msg) =>
+            const messages = result.data.messages || [];
+
+            for (const msg of messages) {
+                if (
                     msg.id?.[2] === "ToolMessage" &&
-                    typeof msg.kwargs?.content === "string" &&
-                    msg.kwargs.content.includes("route")
-            );
+                    typeof msg.kwargs?.content === "string"
+                ) {
+                    const rawContent = msg.kwargs.content.trim();
 
-            if (!toolMessage) {
-                console.warn("No tool message found");
-                return;
-            }
+                    // Clean up the markdown formatting if present
+                    const cleanedContent = rawContent.replace(/```json|```/g, '').trim();
 
-            let parsedContent;
-            try {
-                parsedContent = JSON.parse(toolMessage.kwargs.content);
-            } catch (e) {
-                console.error("Failed to parse tool message content:", e);
-                return;
-            }
+                    let parsedContent;
+                    try {
+                        parsedContent = JSON.parse(cleanedContent);
+                    } catch (e) {
+                        console.warn("Couldn't parse tool message:", cleanedContent);
+                        continue;
+                    }
 
-            console.log("Parsed tool output:", parsedContent);
+                    // 🎯 Routing logic
+                    if (parsedContent.route) {
+                        console.log("Routing to:", parsedContent.route);
+                        setChatlist(prev => [
+                            ...prev,
+                            {
+                                role: "assistant",
+                                content: parsedContent.message,
+                            }
+                        ]);
+                        router.push(parsedContent.route);
+                    }
 
-            // ✅ Add assistant response
-            setChatlist(prev => [
-                ...prev,
-                {
-                    role: "assistant",
-                    content: parsedContent.message,
+                    // 🛒 Cart logic
+                    if (parsedContent.action && parsedContent.product_id) {
+                        setChatlist(prev => [
+                            ...prev,
+                            {
+                                role: "assistant",
+                                content: `Okay, I will ${parsedContent.action} product with ID ${parsedContent.product_id} in your cart.`,
+                            }
+                        ]);
+
+                        if (parsedContent.action === "add") {
+                            setCart(prev => [...prev, parsedContent.product_id]);
+                        } else if (parsedContent.action === "remove") {
+                            setCart(prev => prev.filter(id => id !== parsedContent.product_id));
+                        }
+                    }
                 }
-            ]);
-
-            // ✅ Route navigation
-            router.push(parsedContent.route);
+            }
         } catch (err) {
             console.error("AI Error:", err);
         }
     };
+
 
     return (
         <>

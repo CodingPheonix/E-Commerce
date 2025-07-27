@@ -1,13 +1,7 @@
 import { DynamicStructuredTool } from "langchain/tools";
 import { gemini } from "./agent";
 import { z } from "zod";
-import { getCategories } from "../Components/api_calls";
-
-// Initialise model
-// const model = new ChatGoogleGenerativeAI({
-//     apiKey: process.env.GEMINI_API_KEY,
-//     model: "gemini-2.0-flash"
-// });
+import { getCategories, getProducts } from "../Components/api_calls";
 
 // get categories list
 const get_category_routes = async () => {
@@ -20,15 +14,6 @@ const get_category_routes = async () => {
     console.log(category_routes)
     return category_routes
 }
-
-// const keywordToRouteMap = {
-//     mens_pants: "/mens/pants",
-//     mens_shirts: "/mens/shirts",
-//     mens_shoes: "/mens/shoes",
-//     ladies_pants: "/ladies/pants",
-//     ladies_sweater: "/ladies/sweater",
-//     ladies_tops: "/ladies/tops",
-// };
 
 export const getNavigation = new DynamicStructuredTool({
     name: "getPerfectLocation",
@@ -66,3 +51,46 @@ export const getNavigation = new DynamicStructuredTool({
             };
     },
 });
+
+export const ManageCart = new DynamicStructuredTool({
+    name: 'Cart_Manager',
+    description: "Manages cart based on User's choice",
+    schema: z.object({
+        input: z.string().describe("A sentence from the user containing the name of the item to be added to the cart and an action refering to Add to cart"),
+    }),
+    func: async ({ input }) => {
+
+        const all_products = await getProducts()
+
+        const prompt = `
+            You are a smart shopping assistant.
+
+            Your task:
+            - Understand if the user wants to add or remove a product from their cart.
+            - Match the intended product name from the list of products.
+            - Only use products from the list provided.
+            - Use partial or approximate matching if needed.
+
+            📦 All available products:
+            ${JSON.stringify(all_products)}
+
+            🗣️ User Message:
+            "${input}"
+
+            Return ONLY a JSON object:
+            - { "action": "add", "product_id": 7 }
+            - { "action": "remove", "product_id": 12 }
+
+            If no match is found:
+            { "action": "none", "product_id": null }
+
+            No other explanation.
+        `;
+
+        const response = await gemini.invoke(prompt);
+        const result = response.content?.trim();
+
+        return result
+
+    },
+})
