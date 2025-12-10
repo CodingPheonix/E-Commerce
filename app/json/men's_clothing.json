@@ -1,0 +1,82 @@
+[
+  {
+    "type": "men's clothing",
+    "id": 1,
+    "name": "Classic Cotton Shirt",
+    "image": "shirt-1",
+    "price": 29.99,
+    "description": "A comfortable cotton shirt perfect for everyday wear."
+  },
+  {
+    "type": "men's clothing",
+    "id": 2,
+    "name": "Slim Fit Oxford Shirt",
+    "image": "shirt-2",
+    "price": 34.50,
+    "description": "A stylish slim-fit oxford shirt suitable for both casual and formal occasions."
+  },
+  {
+    "type": "men's clothing",
+    "id": 3,
+    "name": "Casual Linen Shirt",
+    "image": "shirt-3",
+    "price": 42.00,
+    "description": "Lightweight linen shirt ideal for warm weather."
+  },
+  {
+    "type": "men's clothing",
+    "id": 4,
+    "name": "Plaid Flannel Shirt",
+    "image": "shirt-4",
+    "price": 39.99,
+    "description": "Soft and warm flannel shirt with a classic plaid design."
+  },
+  {
+    "type": "men's clothing",
+    "id": 5,
+    "name": "Short Sleeve Polo",
+    "image": "shirt-5",
+    "price": 27.95,
+    "description": "A breathable short-sleeve polo for casual outings."
+  },
+  {
+    "type": "men's clothing",
+    "id": 6,
+    "name": "Denim Button-Up Shirt",
+    "image": "shirt-6",
+    "price": 45.00,
+    "description": "A rugged denim shirt with durable stitching and a modern fit."
+  },
+  {
+    "type": "men's clothing",
+    "id": 7,
+    "name": "Performance Sports Tee",
+    "image": "shirt-7",
+    "price": 22.49,
+    "description": "Moisture-wicking sports shirt designed for active wear."
+  },
+  {
+    "type": "men's clothing",
+    "id": 8,
+    "name": "Premium Dress Shirt",
+    "image": "shirt-8",
+    "price": 54.99,
+    "description": "A premium quality dress shirt ideal for formal events."
+  },
+  {
+    "type": "men's clothing",
+    "id": 9,
+    "name": "Vintage Graphic Tee",
+    "image": "shirt-9",
+    "price": 19.99,
+    "description": "A trendy graphic tee with a retro design."
+  },
+  {
+    "type": "men's clothing",
+    "id": 10,
+    "name": "Long Sleeve Henley",
+    "image": "shirt-10",
+    "price": 31.75,
+    "description": "A soft, long-sleeve Henley perfect for layering."
+  }
+]
