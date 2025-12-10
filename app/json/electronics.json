@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "type": "electronics",
+    "name": "SwiftPhone X Compact",
+    "image": "mobile-3",
+    "price": 349.99,
+    "category": "mobile",
+    "description": "A compact smartphone with fast performance and long battery life.",
+    "rating": 4.1
+  },
+  {
+    "id": 2,
+    "type": "electronics",
+    "name": "CineMax 50\" Smart TV",
+    "image": "television-2",
+    "price": 429.50,
+    "category": "television",
+    "description": "A 50-inch smart television with built-in streaming apps and WiFi.",
+    "rating": 4.5
+  },
+  {
+    "id": 3,
+    "type": "electronics",
+    "name": "UltraView 43\" LED TV",
+    "image": "television-1",
+    "price": 299.99,
+    "category": "television",
+    "description": "A compact 43-inch LED TV offering sharp visuals and vibrant colors.",
+    "rating": 4.2
+  },
+  {
+    "id": 4,
+    "type": "electronics",
+    "name": "PrimeVision 55\" 4K UHD",
+    "image": "television-3",
+    "price": 549.99,
+    "category": "television",
+    "description": "A 55-inch 4K UHD display providing crystal-clear image quality.",
+    "rating": 4.6
+  },
+  {
+    "id": 5,
+    "type": "electronics",
+    "name": "AeroPhone Pro 5G",
+    "image": "mobile-1",
+    "price": 699.99,
+    "category": "mobile",
+    "description": "A flagship 5G smartphone with an immersive display and fast charging.",
+    "rating": 4.7
+  },
+  {
+    "id": 6,
+    "type": "electronics",
+    "name": "VistaLite 32\" HD TV",
+    "image": "television-5",
+    "price": 189.99,
+    "category": "television",
+    "description": "A budget-friendly 32-inch HD TV ideal for small rooms.",
+    "rating": 3.9
+  },
+  {
+    "id": 7,
+    "type": "electronics",
+    "name": "NoteMaster XL",
+    "image": "mobile-6",
+    "price": 499.00,
+    "category": "mobile",
+    "description": "A large-screen smartphone perfect for work, streaming, and gaming.",
+    "rating": 4.3
+  },
+  {
+    "id": 8,
+    "type": "electronics",
+    "name": "HomeCine 65\" HDR Smart TV",
+    "image": "television-4",
+    "price": 749.00,
+    "category": "television",
+    "description": "A 65-inch HDR smart TV designed for immersive home entertainment.",
+    "rating": 4.8
+  },
+  {
+    "id": 9,
+    "type": "electronics",
+    "name": "NeoView 40\" Smart LED",
+    "image": "television-7",
+    "price": 259.50,
+    "category": "television",
+    "description": "A sleek 40-inch smart LED TV with smooth streaming capabilities.",
+    "rating": 4.1
+  },
+  {
+    "id": 10,
+    "type": "electronics",
+    "name": "OptiScreen 75\" 4K Ultra HD",
+    "image": "television-6",
+    "price": 999.00,
+    "category": "television",
+    "description": "A massive 75-inch 4K display with enhanced brightness and depth.",
+    "rating": 4.7
+  },
+  {
+    "id": 11,
+    "type": "electronics",
+    "name": "CrystalView 70\" Smart TV",
+    "image": "television-9",
+    "price": 899.50,
+    "category": "television",
+    "description": "A 70-inch smart TV offering advanced motion smoothing and clarity.",
+    "rating": 4.7
+  },
+  {
+    "id": 12,
+    "type": "electronics",
+    "name": "UltraFrame 58\" QLED",
+    "image": "television-8",
+    "price": 679.99,
+    "category": "television",
+    "description": "A 58-inch QLED TV delivering rich colors and deep contrast levels.",
+    "rating": 4.6
+  },
+  {
+    "id": 13,
+    "type": "electronics",
+    "name": "EcoScreen 48\" Energy Saver TV",
+    "image": "television-10",
+    "price": 349.99,
+    "category": "television",
+    "description": "An energy-efficient 48-inch TV designed to reduce power usage.",
+    "rating": 4.0
+  },
+  {
+    "id": 14,
+    "type": "electronics",
+    "name": "FlexiPhone S Lite",
+    "image": "mobile-2",
+    "price": 279.99,
+    "category": "mobile",
+    "description": "A lightweight smartphone offering smooth performance for daily use.",
+    "rating": 3.8
+  },
+  {
+    "id": 15,
+    "type": "electronics",
+    "name": "MegaPixel ZoomPhone",
+    "image": "mobile-4",
+    "price": 559.99,
+    "category": "mobile",
+    "description": "A camera-focused smartphone with advanced zoom capabilities.",
+    "rating": 4.4
+  },
+  {
+    "id": 16,
+    "type": "electronics",
+    "name": "AirLite Mini",
+    "image": "mobile-7",
+    "price": 199.99,
+    "category": "mobile",
+    "description": "An affordable smartphone with essential features and long battery life.",
+    "rating": 3.7
+  },
+  {
+    "id": 17,
+    "type": "electronics",
+    "name": "TitanPhone Max 5G",
+    "image": "mobile-5",
+    "price": 799.00,
+    "category": "mobile",
+    "description": "A premium 5G device featuring a fast processor and pro camera.",
+    "rating": 4.8
+  },
+  {
+    "id": 18,
+    "type": "electronics",
+    "name": "SlimEdge Pro",
+    "image": "mobile-8",
+    "price": 329.50,
+    "category": "mobile",
+    "description": "A sleek, slim smartphone with a vivid AMOLED display.",
+    "rating": 4.2
+  },
+  {
+    "id": 19,
+    "type": "electronics",
+    "name": "VisionPhone Ultra HD",
+    "image": "mobile-10",
+    "price": 599.99,
+    "category": "mobile",
+    "description": "A high-end smartphone with ultra-clear display technology.",
+    "rating": 4.6
+  },
+  {
+    "id": 20,
+    "type": "electronics",
+    "name": "BudgetGo Essential",
+    "image": "mobile-9",
+    "price": 149.99,
+    "category": "mobile",
+    "description": "A simple and reliable budget smartphone for everyday tasks.",
+    "rating": 3.5
+  }
+]
