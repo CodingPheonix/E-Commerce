@@ -28,3 +28,8 @@ select {
   transform: translateY(-50%);
   pointer-events: none;
 }
+
+
+.adjust_text{
+  font-size: clamp(10px, 2vw, 14px);
+}
