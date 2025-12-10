@@ -1,242 +1,272 @@
 [
-    {
-        "type": "men's accessories",
-        "id": 27,
-        "name": "Leather Belt",
-        "image": "accessories-7",
-        "price": 24.99,
-        "description": "A durable genuine leather belt with a classic buckle."
-    },
-    {
-        "type": "men's clothing",
-        "id": 14,
-        "name": "Jogger Pants",
-        "image": "pants-4",
-        "price": 33.00,
-        "description": "Comfortable joggers with an athletic tapered design."
-    },
-    {
-        "type": "men's accessories",
-        "id": 22,
-        "name": "Classic Wristwatch",
-        "image": "accessories-2",
-        "price": 89.99,
-        "description": "A timeless analog wristwatch with a stainless steel band."
-    },
-    {
-        "type": "men's clothing",
-        "id": 8,
-        "name": "Premium Dress Shirt",
-        "image": "shirt-8",
-        "price": 54.99,
-        "description": "A premium quality dress shirt ideal for formal events."
-    },
-    {
-        "type": "men's accessories",
-        "id": 30,
-        "name": "Eyeglass Cleaner Kit",
-        "image": "accessories-10",
-        "price": 8.99,
-        "description": "A compact kit for keeping your glasses spotless."
-    },
-    {
-        "type": "men's clothing",
-        "id": 19,
-        "name": "Relaxed Fit Sweatpants",
-        "image": "pants-9",
-        "price": 27.99,
-        "description": "Relaxed-fit fleece sweatpants ideal for lounging."
-    },
-    {
-        "type": "men's accessories",
-        "id": 21,
-        "name": "Aviator Sunglasses",
-        "image": "accessories-1",
-        "price": 29.99,
-        "description": "Stylish aviator sunglasses with UV protection."
-    },
-    {
-        "type": "men's clothing",
-        "id": 1,
-        "name": "Classic Cotton Shirt",
-        "image": "shirt-1",
-        "price": 29.99,
-        "description": "A comfortable cotton shirt perfect for everyday wear."
-    },
-    {
-        "type": "men's accessories",
-        "id": 23,
-        "name": "Wool Scarf",
-        "image": "accessories-3",
-        "price": 19.99,
-        "description": "Soft wool scarf designed to keep you warm in winter."
-    },
-    {
-        "type": "men's clothing",
-        "id": 12,
-        "name": "Straight Leg Trousers",
-        "image": "pants-2",
-        "price": 41.25,
-        "description": "Versatile straight-leg trousers perfect for the office."
-    },
-    {
-        "type": "men's accessories",
-        "id": 28,
-        "name": "Canvas Backpack",
-        "image": "accessories-8",
-        "price": 39.50,
-        "description": "Durable canvas backpack with multiple compartments."
-    },
-    {
-        "type": "men's clothing",
-        "id": 5,
-        "name": "Short Sleeve Polo",
-        "image": "shirt-5",
-        "price": 27.95,
-        "description": "A breathable short-sleeve polo for casual outings."
-    },
-    {
-        "type": "men's accessories",
-        "id": 26,
-        "name": "Knitted Winter Hat",
-        "image": "accessories-6",
-        "price": 14.99,
-        "description": "Warm knitted hat suitable for winter weather."
-    },
-    {
-        "type": "men's clothing",
-        "id": 16,
-        "name": "Formal Dress Pants",
-        "image": "pants-6",
-        "price": 58.00,
-        "description": "Elegant dress pants tailored for formal occasions."
-    },
-    {
-        "type": "men's accessories",
-        "id": 24,
-        "name": "Leather Wallet",
-        "image": "accessories-4",
-        "price": 34.99,
-        "description": "A compact bifold wallet made from premium leather."
-    },
-    {
-        "type": "men's clothing",
-        "id": 7,
-        "name": "Performance Sports Tee",
-        "image": "shirt-7",
-        "price": 22.49,
-        "description": "Moisture-wicking sports shirt designed for active wear."
-    },
-    {
-        "type": "men's accessories",
-        "id": 29,
-        "name": "Silver Chain Necklace",
-        "image": "accessories-9",
-        "price": 44.00,
-        "description": "A stylish silver chain suitable for casual wear."
-    },
-    {
-        "type": "men's clothing",
-        "id": 18,
-        "name": "Ripped Denim Jeans",
-        "image": "pants-8",
-        "price": 52.00,
-        "description": "Trendy ripped jeans with a modern slim fit."
-    },
-    {
-        "type": "men's accessories",
-        "id": 25,
-        "name": "Baseball Cap",
-        "image": "accessories-5",
-        "price": 16.50,
-        "description": "A classic adjustable baseball cap for everyday wear."
-    },
-    {
-        "type": "men's clothing",
-        "id": 3,
-        "name": "Casual Linen Shirt",
-        "image": "shirt-3",
-        "price": 42.00,
-        "description": "Lightweight linen shirt ideal for warm weather."
-    },
-    {
-        "type": "men's accessories",
-        "id": 22,
-        "name": "Beaded Bracelet",
-        "image": "accessories-2",
-        "price": 12.99,
-        "description": "A handcrafted beaded bracelet with a minimalist design."
-    },
-    {
-        "type": "men's clothing",
-        "id": 9,
-        "name": "Vintage Graphic Tee",
-        "image": "shirt-9",
-        "price": 19.99,
-        "description": "A trendy graphic tee with a retro design."
-    },
-    {
-        "type": "men's accessories",
-        "id": 23,
-        "name": "Silk Tie",
-        "image": "accessories-3",
-        "price": 22.00,
-        "description": "A smooth silk tie perfect for business and formal wear."
-    },
-    {
-        "type": "men's clothing",
-        "id": 20,
-        "name": "Athletic Training Pants",
-        "image": "pants-10",
-        "price": 36.99,
-        "description": "Lightweight athletic pants designed for performance."
-    },
-    {
-        "type": "men's clothing",
-        "id": 6,
-        "name": "Denim Button-Up Shirt",
-        "image": "shirt-6",
-        "price": 45.00,
-        "description": "A rugged denim shirt with durable stitching and a modern fit."
-    },
-    {
-        "type": "men's clothing",
-        "id": 10,
-        "name": "Long Sleeve Henley",
-        "image": "shirt-10",
-        "price": 31.75,
-        "description": "A soft, long-sleeve Henley perfect for layering."
-    },
-    {
-        "type": "men's clothing",
-        "id": 11,
-        "name": "Slim Fit Chinos",
-        "image": "pants-1",
-        "price": 39.99,
-        "description": "A pair of slim-fit chinos suitable for both work and casual outings."
-    },
-    {
-        "type": "men's clothing",
-        "id": 13,
-        "name": "Classic Blue Jeans",
-        "image": "pants-3",
-        "price": 49.99,
-        "description": "Timeless straight-fit jeans made from high-quality denim."
-    },
-    {
-        "type": "men's accessories",
-        "id": 21,
-        "name": "Travel Toiletry Bag",
-        "image": "accessories-1",
-        "price": 18.99,
-        "description": "A compact toiletry bag ideal for travel or gym use."
-    },
-    {
-        "type": "men's clothing",
-        "id": 4,
-        "name": "Plaid Flannel Shirt",
-        "image": "shirt-4",
-        "price": 39.99,
-        "description": "Soft and warm flannel shirt with a classic plaid design."
-    }
+  {
+    "type": "men's accessories",
+    "category": "tie",
+    "id": 25,
+    "name": "Striped Silk Tie",
+    "image": "accessories-1",
+    "price": 18.99,
+    "description": "A classic striped silk tie suitable for formal wear."
+  },
+  {
+    "type": "men's clothing",
+    "category": "pants",
+    "id": 14,
+    "name": "Jogger Pants",
+    "image": "pants-4",
+    "price": 33.00,
+    "description": "Comfortable joggers with an athletic tapered design."
+  },
+  {
+    "type": "men's clothing",
+    "category": "shirt",
+    "id": 8,
+    "name": "Premium Dress Shirt",
+    "image": "shirt-8",
+    "price": 54.99,
+    "description": "A premium quality dress shirt ideal for formal events."
+  },
+  {
+    "type": "men's accessories",
+    "category": "belt",
+    "id": 28,
+    "name": "Casual Leather Belt",
+    "image": "accessories-5",
+    "price": 24.50,
+    "description": "A sturdy leather belt designed for everyday wear."
+  },
+  {
+    "type": "men's clothing",
+    "category": "shirt",
+    "id": 1,
+    "name": "Classic Cotton Shirt",
+    "image": "shirt-1",
+    "price": 29.99,
+    "description": "A comfortable cotton shirt perfect for everyday wear."
+  },
+  {
+    "type": "men's accessories",
+    "category": "belt",
+    "id": 29,
+    "name": "Formal Dress Belt",
+    "image": "accessories-6",
+    "price": 28.00,
+    "description": "A sleek formal belt made with polished leather."
+  },
+  {
+    "type": "men's clothing",
+    "category": "pants",
+    "id": 18,
+    "name": "Ripped Denim Jeans",
+    "image": "pants-8",
+    "price": 52.00,
+    "description": "Trendy ripped jeans with a modern slim fit."
+  },
+  {
+    "type": "men's clothing",
+    "category": "shirt",
+    "id": 7,
+    "name": "Performance Sports Tee",
+    "image": "shirt-7",
+    "price": 22.49,
+    "description": "Moisture-wicking sports shirt designed for active wear."
+  },
+  {
+    "type": "men's accessories",
+    "category": "belt",
+    "id": 30,
+    "name": "Braided Rope Belt",
+    "image": "accessories-7",
+    "price": 19.99,
+    "description": "A flexible braided belt with a casual style."
+  },
+  {
+    "type": "men's clothing",
+    "category": "pants",
+    "id": 19,
+    "name": "Relaxed Fit Sweatpants",
+    "image": "pants-9",
+    "price": 27.99,
+    "description": "Relaxed-fit fleece sweatpants ideal for lounging."
+  },
+  {
+    "type": "men's accessories",
+    "category": "tie",
+    "id": 26,
+    "name": "Solid Navy Tie",
+    "image": "accessories-2",
+    "price": 17.50,
+    "description": "A solid navy tie that pairs well with any suit."
+  },
+  {
+    "type": "men's clothing",
+    "category": "shirt",
+    "id": 4,
+    "name": "Plaid Flannel Shirt",
+    "image": "shirt-4",
+    "price": 39.99,
+    "description": "Soft and warm flannel shirt with a classic plaid design."
+  },
+  {
+    "type": "men's accessories",
+    "category": "wallet",
+    "id": 33,
+    "name": "Minimalist Leather Wallet",
+    "image": "accessories-9",
+    "price": 32.00,
+    "description": "A slim wallet crafted from premium leather."
+  },
+  {
+    "type": "men's clothing",
+    "category": "pants",
+    "id": 13,
+    "name": "Classic Blue Jeans",
+    "image": "pants-3",
+    "price": 49.99,
+    "description": "Timeless straight-fit jeans made from high-quality denim."
+  },
+  {
+    "type": "men's accessories",
+    "category": "tie",
+    "id": 27,
+    "name": "Patterned Silk Tie",
+    "image": "accessories-3",
+    "price": 21.00,
+    "description": "A silk tie featuring a modern, geometric pattern."
+  },
+  {
+    "type": "men's clothing",
+    "category": "shirt",
+    "id": 10,
+    "name": "Long Sleeve Henley",
+    "image": "shirt-10",
+    "price": 31.75,
+    "description": "A soft, long-sleeve Henley perfect for layering."
+  },
+  {
+    "type": "men's clothing",
+    "category": "pants",
+    "id": 11,
+    "name": "Slim Fit Chinos",
+    "image": "pants-1",
+    "price": 39.99,
+    "description": "A pair of slim-fit chinos suitable for both work and casual outings."
+  },
+  {
+    "type": "men's accessories",
+    "category": "belt",
+    "id": 31,
+    "name": "Formal Reversible Belt",
+    "image": "accessories-8",
+    "price": 34.00,
+    "description": "A reversible belt offering both black and brown options."
+  },
+  {
+    "type": "men's clothing",
+    "category": "shirt",
+    "id": 3,
+    "name": "Casual Linen Shirt",
+    "image": "shirt-3",
+    "price": 42.00,
+    "description": "Lightweight linen shirt ideal for warm weather."
+  },
+  {
+    "type": "men's accessories",
+    "category": "wallet",
+    "id": 34,
+    "name": "Bi-Fold Leather Wallet",
+    "image": "accessories-10",
+    "price": 37.99,
+    "description": "A classic bi-fold wallet with multiple card slots."
+  },
+  {
+    "type": "men's clothing",
+    "category": "pants",
+    "id": 20,
+    "name": "Athletic Training Pants",
+    "image": "pants-10",
+    "price": 36.99,
+    "description": "Lightweight athletic pants designed for performance."
+  },
+  {
+    "type": "men's clothing",
+    "category": "shirt",
+    "id": 5,
+    "name": "Short Sleeve Polo",
+    "image": "shirt-5",
+    "price": 27.95,
+    "description": "A breathable short-sleeve polo for casual outings."
+  },
+  {
+    "type": "men's accessories",
+    "category": "tie",
+    "id": 32,
+    "name": "Diamond Pattern Tie",
+    "image": "accessories-4",
+    "price": 23.50,
+    "description": "A stylish tie featuring an elegant diamond pattern."
+  },
+  {
+    "type": "men's clothing",
+    "category": "shirt",
+    "id": 6,
+    "name": "Denim Button-Up Shirt",
+    "image": "shirt-6",
+    "price": 45.00,
+    "description": "A rugged denim shirt with durable stitching and a modern fit."
+  },
+  {
+    "type": "men's clothing",
+    "category": "pants",
+    "id": 17,
+    "name": "Stretch Cargo Pants",
+    "image": "pants-7",
+    "price": 44.00,
+    "description": "Durable cargo pants with flexible stretch fabric."
+  },
+  {
+    "type": "men's clothing",
+    "category": "shirt",
+    "id": 2,
+    "name": "Slim Fit Oxford Shirt",
+    "image": "shirt-2",
+    "price": 34.50,
+    "description": "A stylish slim-fit oxford shirt suitable for both casual and formal occasions."
+  },
+  {
+    "type": "men's clothing",
+    "category": "pants",
+    "id": 12,
+    "name": "Straight Leg Trousers",
+    "image": "pants-2",
+    "price": 41.25,
+    "description": "Versatile straight-leg trousers perfect for the office."
+  },
+  {
+    "type": "men's clothing",
+    "category": "pants",
+    "id": 15,
+    "name": "Tapered Sweatpants",
+    "image": "pants-5",
+    "price": 29.50,
+    "description": "Soft, tapered sweatpants with a comfortable fit."
+  },
+  {
+    "type": "men's clothing",
+    "category": "shirt",
+    "id": 9,
+    "name": "Vintage Graphic Tee",
+    "image": "shirt-9",
+    "price": 19.99,
+    "description": "A trendy graphic tee with a retro design."
+  },
+  {
+    "type": "men's clothing",
+    "category": "pants",
+    "id": 16,
+    "name": "Formal Dress Pants",
+    "image": "pants-6",
+    "price": 58.00,
+    "description": "Elegant dress pants tailored for formal occasions."
+  }
 ]
