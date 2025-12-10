@@ -6,6 +6,7 @@ import { getNavigation, ManageCart } from "./tools";
 const agentTools = [getNavigation, ManageCart];
 const agentCheckpointer = new MemorySaver();
 
+
 export const ai_agent = createReactAgent({
   llm: gemini,
   tools: agentTools,

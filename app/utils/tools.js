@@ -17,9 +17,9 @@ const get_category_routes = async () => {
 
 export const getNavigation = new DynamicStructuredTool({
     name: "getPerfectLocation",
-    description: "Determines the route based on what user wants to browse.",
+    description: "Use this tool ONLY when a user is expressing interest in browsing or buying items (e.g., they say 'I want to buy', 'looking for', or 'need to shop for'). Returns the appropriate category page route based on intent.",
     schema: z.object({
-        input: z.string().describe("A sentence from the user describing what they want to browse"),
+        input: z.string().describe("A user sentence describing what they want to browse or shop for. For example: 'I want to buy a phone', 'Looking for men’s shirts', or 'Need to browse kids wear'."),
     }),
     func: async ({ input }) => {
         const category_routes = await get_category_routes();
@@ -54,9 +54,9 @@ export const getNavigation = new DynamicStructuredTool({
 
 export const ManageCart = new DynamicStructuredTool({
     name: 'Cart_Manager',
-    description: "Manages cart based on User's choice",
+    description: "Use this tool only when the user wants to manage their shopping cart. This includes actions such as adding products to the cart, removing items, updating quantities, or viewing the contents of the cart. Do not use this tool for product browsing, searching, or category navigation.",
     schema: z.object({
-        input: z.string().describe("A sentence from the user containing the name of the item to be added to the cart and an action refering to Add to cart"),
+        input: z.string().describe("The cart-related action to perform. 'add' to add a product, 'remove' to remove it"),
     }),
     func: async ({ input }) => {
 

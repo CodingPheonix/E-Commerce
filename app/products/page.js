@@ -11,7 +11,9 @@ const ArrowLeftDoubleIcon = (props) => (
 );
 
 export default async function ProductsPage({ searchParams }) {
-    const selectedCategory = searchParams?.category;
+    // const selectedCategory = await searchParams?.category;
+    const selected = await searchParams;
+    const selectedCategory = selected?.category;
     const [products, categories] = await Promise.all([
         getProducts(),
         getCategories(),
