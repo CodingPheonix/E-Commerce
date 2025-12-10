@@ -1,6 +1,6 @@
 [
   {
-    "type": "men's accessories",
+    "type": "men's clothing",
     "category": "tie",
     "id": 25,
     "name": "Striped Silk Tie",
@@ -30,7 +30,7 @@
     "rating": 4.7
   },
   {
-    "type": "men's accessories",
+    "type": "men's clothing",
     "category": "belt",
     "id": 28,
     "name": "Casual Leather Belt",
@@ -50,7 +50,7 @@
     "rating": 4.5
   },
   {
-    "type": "men's accessories",
+    "type": "men's clothing",
     "category": "belt",
     "id": 29,
     "name": "Formal Dress Belt",
@@ -80,7 +80,7 @@
     "rating": 3.9
   },
   {
-    "type": "men's accessories",
+    "type": "men's clothing",
     "category": "belt",
     "id": 30,
     "name": "Braided Rope Belt",
@@ -100,7 +100,7 @@
     "rating": 4.2
   },
   {
-    "type": "men's accessories",
+    "type": "men's clothing",
     "category": "tie",
     "id": 26,
     "name": "Solid Navy Tie",
@@ -120,7 +120,7 @@
     "rating": 4.6
   },
   {
-    "type": "men's accessories",
+    "type": "men's clothing",
     "category": "wallet",
     "id": 33,
     "name": "Minimalist Leather Wallet",
@@ -140,7 +140,7 @@
     "rating": 4.5
   },
   {
-    "type": "men's accessories",
+    "type": "men's clothing",
     "category": "tie",
     "id": 27,
     "name": "Patterned Silk Tie",
@@ -170,7 +170,7 @@
     "rating": 4.3
   },
   {
-    "type": "men's accessories",
+    "type": "men's clothing",
     "category": "belt",
     "id": 31,
     "name": "Formal Reversible Belt",
@@ -190,7 +190,7 @@
     "rating": 4.6
   },
   {
-    "type": "men's accessories",
+    "type": "men's clothing",
     "category": "wallet",
     "id": 34,
     "name": "Bi-Fold Leather Wallet",
@@ -220,7 +220,7 @@
     "rating": 3.9
   },
   {
-    "type": "men's accessories",
+    "type": "men's clothing",
     "category": "tie",
     "id": 32,
     "name": "Diamond Pattern Tie",

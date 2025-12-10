@@ -12,12 +12,12 @@ const Navbar = () => {
         <nav className="bg-white text-black shadow-md">
             <div className='flex justify-around items-center bg-green-800 text-white text-sm py-2 px-4'>
                 <p>Call us: +123-456-789</p>
-                <p><Link className='underline' href={'*'}>Sign up</Link> and get 25% OFF on your first Order</p>
+                <p><Link className='underline hover:text-green-500' href={'*'}>Sign up</Link> and get 25% OFF on your first Order</p>
                 <ul className='flex gap-4'>
-                    <li><FaFacebook /></li>
-                    <li><RiInstagramFill /></li>
-                    <li><FaXTwitter /></li>
-                    <li><FaYoutube /></li>
+                    <li className='hover: cursor-pointer'><FaFacebook /></li>
+                    <li className='hover: cursor-pointer'><RiInstagramFill /></li>
+                    <li className='hover: cursor-pointer'><FaXTwitter /></li>
+                    <li className='hover: cursor-pointer'><FaYoutube /></li>
                 </ul>
             </div>
             <div className="max-w-6xl mx-auto flex justify-between items-center py-2">
