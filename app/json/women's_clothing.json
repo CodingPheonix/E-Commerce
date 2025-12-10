@@ -1,0 +1,242 @@
+[
+  {
+    "id": 18,
+    "type": "women's clothing",
+    "name": "Classic Leather Heels",
+    "image": "w-accessories-2",
+    "price": 48.50,
+    "category": "shoes",
+    "description": "Elegant leather heels designed for formal and business outfits.",
+    "rating": 4.4
+  },
+  {
+    "id": 7,
+    "type": "women's clothing",
+    "name": "Pastel Floral Saree",
+    "image": "w-shirt-7",
+    "price": 65.00,
+    "category": "saree",
+    "description": "A soft pastel saree adorned with delicate floral motifs.",
+    "rating": 4.5
+  },
+  {
+    "id": 23,
+    "type": "women's clothing",
+    "name": "Mini Crossbody Bag",
+    "image": "w-accessories-8",
+    "price": 44.75,
+    "category": "handbag",
+    "description": "A compact crossbody bag with enough space for daily essentials.",
+    "rating": 4.2
+  },
+  {
+    "id": 12,
+    "type": "women's clothing",
+    "name": "High-Waist Straight Pants",
+    "image": "w-pants-2",
+    "price": 37.99,
+    "category": "pants",
+    "description": "High-waist straight-leg pants ideal for office and casual wear.",
+    "rating": 4.2
+  },
+  {
+    "id": 1,
+    "type": "women's clothing",
+    "name": "Classic Cotton Blouse",
+    "image": "w-shirt-1",
+    "price": 34.99,
+    "category": "shirt",
+    "description": "A breathable cotton blouse designed for everyday comfort.",
+    "rating": 4.3
+  },
+  {
+    "id": 20,
+    "type": "women's clothing",
+    "name": "Suede Ankle Boots",
+    "image": "w-accessories-4",
+    "price": 52.00,
+    "category": "shoes",
+    "description": "Stylish suede boots offering both comfort and durability.",
+    "rating": 4.6
+  },
+  {
+    "id": 5,
+    "type": "women's clothing",
+    "name": "Traditional Red Saree",
+    "image": "w-shirt-5",
+    "price": 59.99,
+    "category": "saree",
+    "description": "A stunning red saree featuring detailed embroidery.",
+    "rating": 4.7
+  },
+  {
+    "id": 15,
+    "type": "women's clothing",
+    "name": "Relaxed Jogger Pants",
+    "image": "w-pants-5",
+    "price": 29.99,
+    "category": "pants",
+    "description": "Soft jogger pants designed for comfort and everyday wear.",
+    "rating": 4.1
+  },
+  {
+    "id": 19,
+    "type": "women's clothing",
+    "name": "Open-Toe Summer Sandals",
+    "image": "w-accessories-3",
+    "price": 27.40,
+    "category": "shoes",
+    "description": "Lightweight sandals perfect for warm-weather outfits.",
+    "rating": 3.8
+  },
+  {
+    "id": 10,
+    "type": "women's clothing",
+    "name": "Formal Button-Up Blouse",
+    "image": "w-shirt-10",
+    "price": 41.75,
+    "category": "shirt",
+    "description": "A crisp button-up blouse tailored for office wear.",
+    "rating": 4.4
+  },
+  {
+    "id": 17,
+    "type": "women's clothing",
+    "name": "Textured Ballet Flats",
+    "image": "w-accessories-1",
+    "price": 25.99,
+    "category": "shoes",
+    "description": "Soft textured flats offering all-day comfort.",
+    "rating": 4.0
+  },
+  {
+    "id": 4,
+    "type": "women's clothing",
+    "name": "Sleeveless Chiffon Top",
+    "image": "w-shirt-4",
+    "price": 26.99,
+    "category": "shirt",
+    "description": "An elegant sleeveless chiffon top ideal for warm days.",
+    "rating": 3.9
+  },
+  {
+    "id": 13,
+    "type": "women's clothing",
+    "name": "Wide-Leg Palazzo Pants",
+    "image": "w-pants-3",
+    "price": 42.00,
+    "category": "pants",
+    "description": "Flowy palazzo pants offering a breezy, comfortable fit.",
+    "rating": 4.4
+  },
+  {
+    "id": 22,
+    "type": "women's clothing",
+    "name": "Structured Tote Bag",
+    "image": "w-accessories-7",
+    "price": 63.00,
+    "category": "handbag",
+    "description": "A medium-sized structured tote suitable for daily use.",
+    "rating": 4.5
+  },
+  {
+    "id": 8,
+    "type": "women's clothing",
+    "name": "Golden Zari Embroidered Saree",
+    "image": "w-shirt-8",
+    "price": 89.99,
+    "category": "saree",
+    "description": "A premium saree featuring intricate golden zari work.",
+    "rating": 4.8
+  },
+  {
+    "id": 11,
+    "type": "women's clothing",
+    "name": "Stretch Fit Leggings",
+    "image": "w-pants-1",
+    "price": 24.99,
+    "category": "pants",
+    "description": "Soft stretchable leggings suitable for daily wear.",
+    "rating": 4.0
+  },
+  {
+    "id": 25,
+    "type": "women's clothing",
+    "name": "Premium Leather Shoulder Bag",
+    "image": "w-accessories-10",
+    "price": 79.99,
+    "category": "handbag",
+    "description": "A luxurious shoulder bag crafted from high-quality leather.",
+    "rating": 4.9
+  },
+  {
+    "id": 2,
+    "type": "women's clothing",
+    "name": "Floral Printed Top",
+    "image": "w-shirt-2",
+    "price": 29.50,
+    "category": "shirt",
+    "description": "A soft floral top with vibrant prints and a relaxed fit.",
+    "rating": 4.6
+  },
+  {
+    "id": 21,
+    "type": "women's clothing",
+    "name": "Compact Everyday Handbag",
+    "image": "w-accessories-6",
+    "price": 38.90,
+    "category": "handbag",
+    "description": "A simple everyday handbag made with durable materials.",
+    "rating": 3.9
+  },
+  {
+    "id": 3,
+    "type": "women's clothing",
+    "name": "Silk Blend Kurti Top",
+    "image": "w-shirt-3",
+    "price": 39.00,
+    "category": "shirt",
+    "description": "A lightweight silk-blend kurti perfect for semi-formal outings.",
+    "rating": 4.1
+  },
+  {
+    "id": 24,
+    "type": "women's clothing",
+    "name": "Designer Bucket Bag",
+    "image": "w-accessories-9",
+    "price": 71.25,
+    "category": "handbag",
+    "description": "A stylish bucket bag with a modern silhouette.",
+    "rating": 4.7
+  },
+  {
+    "id": 9,
+    "type": "women's clothing",
+    "name": "Casual Linen Shirt",
+    "image": "w-shirt-9",
+    "price": 32.00,
+    "category": "shirt",
+    "description": "A lightweight linen shirt styled for casual outings.",
+    "rating": 3.8
+  },
+  {
+    "id": 14,
+    "type": "women's clothing",
+    "name": "Tapered Ankle Pants",
+    "image": "w-pants-4",
+    "price": 35.50,
+    "category": "pants",
+    "description": "Elegant tapered ankle-length pants with a slim silhouette.",
+    "rating": 3.9
+  },
+  {
+    "id": 16,
+    "type": "women's clothing",
+    "name": "Sporty Slip-On Sneakers",
+    "image": "w-accessories-5",
+    "price": 33.99,
+    "category": "shoes",
+    "description": "Comfortable slip-on sneakers ideal for all-day wear.",
+    "rating": 4.3
+  }
+]
