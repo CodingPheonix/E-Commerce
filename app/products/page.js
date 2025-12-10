@@ -1,79 +1,86 @@
-import ProductCard from "../Components/ProductCard";
-import { getCategories, getProducts } from "../Components/api_calls";
-import Link from "next/link";
+"use client";
+import Image from "next/image";
+import { useSearchParams } from "next/navigation";
+import electronics from "../json/electronics.json"
+import men from "../json/men's_clothing.json"
+import women from "../json/women's_clothing.json"
 
-// Icons
-const ArrowLeftDoubleIcon = (props) => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={30} height={30} color={"#000000"} fill={"white"} {...props}>
-        <path d="M11.5 18C11.5 18 5.50001 13.5811 5.5 12C5.49999 10.4188 11.5 6 11.5 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
-        <path d="M18.5 18C18.5 18 12.5 13.5811 12.5 12C12.5 10.4188 18.5 6 18.5 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
-    </svg>
-);
+export default function ProductsPage() {
 
-export default async function ProductsPage({ searchParams }) {
-    // const selectedCategory = await searchParams?.category;
-    const selected = await searchParams;
-    const selectedCategory = selected?.category;
-    const [products, categories] = await Promise.all([
-        getProducts(),
-        getCategories(),
-    ]);
+    const searchParams = useSearchParams();
+    const type = decodeURIComponent(searchParams.get("type"));
+    const id = searchParams.get("id");
 
+    console.log("type", type);
+    console.log("id", id);
 
-    const filteredProducts = selectedCategory
-        ? products.filter((p) => p.category === selectedCategory)
-        : products;
+    // Fallback
+    if (!type || !id) {
+        return <div className="max-w-5xl mx-auto p-6">
+            <h2 className="text-2xl font-semibold">Product not found</h2>
+            <p className="mt-4">Please check the product link or go back to the <a href="/categories" className="text-green-600 underline">Categories page</a>.</p>
+        </div>
+    }
+
+    let product = null;
+
+    console.log(electronics, men, women)
+
+    if (type === "electronics") {
+        product = electronics.filter(item => item.id == id)[0];
+    }
+    else if (type === "men's clothing") {
+        product = men.filter(item => item.id == id)[0];
+    }
+    else if (type === "women's clothing") {
+        product = women.filter(item => item.id == id)[0];
+    }
+
+    console.log("product", product);
 
     return (
-        <main className="flex flex-col md:flex-row p-6 gap-6">
-            {/* Sidebar Category List */}
-            <aside className="md:w-1/4 w-full">
-                <div className="flex justify-start gap-4">
-                    <Link href={'/'}><span><ArrowLeftDoubleIcon /></span></Link>
-                    <h2 className="text-xl font-semibold mb-4">Categories</h2>
-                </div>
-                <ul className="space-y-2">
-                    <li>
-                        <Link
-                            href="/products"
-                            className={`block px-4 py-2 rounded-md ${!selectedCategory
-                                ? "bg-[#64FFDA] text-[#0A192F] font-bold"
-                                : "hover:bg-gray-200 hover:text-[#0A192F] hover:font-semibold"
-                                }`}
-                        >
-                            All
-                        </Link>
-                    </li>
-                    {categories.map((cat) => (
-                        <li key={cat}>
-                            <Link
-                                href={`/products?category=${encodeURIComponent(cat)}`}
-                                className={`block px-4 py-2 rounded-md capitalize ${selectedCategory === cat
-                                    ? "bg-[#64FFDA] text-[#0A192F] font-bold"
-                                    : "hover:bg-gray-200 hover:text-[#0A192F] hover:font-semibold"
-                                    }`}
-                            >
-                                {cat}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-            </aside>
+        <div className="max-w-5xl mx-auto p-6">
+            <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col md:flex-row gap-8">
 
-            {/* Main Product Grid */}
-            <section className="md:w-3/4 w-full">
-                <h1 className="text-2xl font-bold mb-4 capitalize">
-                    {selectedCategory ? selectedCategory : "All Products"}
-                </h1>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {filteredProducts.map((product) => (
-                        <ProductCard key={product.id} product={product} />
-                    ))}
+                {/* LEFT — BIG IMAGE */}
+                <div className="w-full md:w-1/2 rounded-xl overflow-hidden h-[40vh] md:h-[45vh]">
+                    <Image
+                        height={300}
+                        width={300}
+                        src={`/${product.image}.webp`}
+                        alt={product.name}
+                        className="w-full h-full object-contain"
+                    />
                 </div>
-                {filteredProducts.length === 0 && (
-                    <p className="mt-4 text-gray-500">No products found.</p>
-                )}
-            </section>
-        </main>
+
+                {/* RIGHT — PRODUCT INFO */}
+                <div className="flex-1 flex flex-col justify-between">
+                    <div>
+                        <h1 className="text-3xl font-bold mb-2">{product.name}</h1>
+                        <p className="text-gray-500 capitalize">{product.category}</p>
+
+                        <p className="text-yellow-500 font-medium mt-1">⭐ {product.rating}</p>
+
+                        <p className="text-3xl font-semibold mt-4">${product.price}</p>
+
+                        <p className="text-gray-700 mt-4 leading-relaxed">
+                            {product.description}
+                        </p>
+                    </div>
+
+                    <div className="mt-8 flex gap-4">
+                        <button className="flex-1 bg-black text-white py-3 rounded-xl hover:bg-gray-800 transition">
+                            Add to Cart
+                        </button>
+
+                        <button className="flex-1 bg-blue-600 text-white py-3 rounded-xl hover:bg-blue-700 transition">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     );
 }
