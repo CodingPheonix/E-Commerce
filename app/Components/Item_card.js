@@ -1,7 +1,11 @@
 import React from 'react'
 import Image from 'next/image';
+import { useCart } from '../context/CartContext';
 
 const Item_card = ({ item }) => {
+
+    const { addToCart } = useCart();
+
     return (
         <div className="relative w-5/6 h-5/6 p-2 hover:shadow-lg transition overflow-hidden flex flex-col">
 
@@ -27,7 +31,10 @@ const Item_card = ({ item }) => {
             </div>
 
             {/* ADD TO CART — 15% height */}
-            <button className="h-[15%] border text-white font-semibold bg-green-700 mx-auto my-2 w-[90%] flex items-center justify-center transition">
+            <button
+                onClick={() => {addToCart(item)}}
+                className="h-[15%] border text-white font-semibold bg-green-700 mx-auto my-2 w-[90%] flex items-center justify-center transition"
+            >
                 Add to Cart
             </button>
 

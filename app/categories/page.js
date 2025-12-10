@@ -6,14 +6,18 @@ import women from "../json/women's_clothing.json"
 import electronics from "../json/electronics.json"
 import { CustomSelect } from "../Components/CustomDropdown";
 import Item_card from "../Components/Item_card";
+import { useCart } from "../context/CartContext";
 
 export default function CategoriesPage() {
   const categories = [...men, ...women, ...electronics];
 
+  const cart = useCart()
+  console.log(cart.cart)
+
   // State List
   const [current_category, setCurrent_category] = useState({ label: "Men's Clothing", options: '' })
 
-  console.log("current_category", current_category);
+  // console.log("current_category", current_category);
 
   // Filtered Category List
   const category_list = categories.filter(category =>
@@ -21,7 +25,7 @@ export default function CategoriesPage() {
       category.type === current_category.label.toLowerCase() && category.category === current_category.options.toLowerCase() :
       category.type === current_category.label.toLowerCase()
   );
-  console.log(category_list);
+  // console.log(category_list);
 
   return (
     <main className="p-6">

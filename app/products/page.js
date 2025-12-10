@@ -4,6 +4,7 @@ import { useSearchParams } from "next/navigation";
 import electronics from "../json/electronics.json"
 import men from "../json/men's_clothing.json"
 import women from "../json/women's_clothing.json"
+import { useCart } from "../context/CartContext";
 
 export default function ProductsPage() {
 
@@ -11,8 +12,7 @@ export default function ProductsPage() {
     const type = decodeURIComponent(searchParams.get("type"));
     const id = searchParams.get("id");
 
-    console.log("type", type);
-    console.log("id", id);
+    const { addToCart } = useCart();
 
     // Fallback
     if (!type || !id) {
@@ -24,8 +24,6 @@ export default function ProductsPage() {
 
     let product = null;
 
-    console.log(electronics, men, women)
-
     if (type === "electronics") {
         product = electronics.filter(item => item.id == id)[0];
     }
@@ -36,7 +34,6 @@ export default function ProductsPage() {
         product = women.filter(item => item.id == id)[0];
     }
 
-    console.log("product", product);
 
     return (
         <div className="max-w-5xl mx-auto p-6">
@@ -69,7 +66,10 @@ export default function ProductsPage() {
                     </div>
 
                     <div className="mt-8 flex gap-4">
-                        <button className="flex-1 bg-black text-white py-3 rounded-xl hover:bg-gray-800 transition">
+                        <button 
+                        onClick={() => {addToCart(product)}}
+                        className="flex-1 bg-black text-white py-3 rounded-xl hover:bg-gray-800 transition"
+                        >
                             Add to Cart
                         </button>
 
