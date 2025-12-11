@@ -39,13 +39,9 @@ export default function CartPage() {
     setTotal(newTotal);
   }, [cartList]);
 
-  const Purchase = () => {
-    setIsPurchasing((prev) => !prev);
-  };
-
   return (
     <main className="max-w-5xl mx-auto p-6">
-      {isPurchasing && <Disclaimer />}
+      {isPurchasing && <Disclaimer setIsPurchasing={setIsPurchasing} isPurchasing={isPurchasing} />}
 
       <h1 className="text-3xl font-bold mb-6">Your Cart</h1>
 
@@ -62,8 +58,8 @@ export default function CartPage() {
           <div className="text-right mt-8">
             <h2 className="text-2xl font-bold">Total: ${total.toFixed(2)}</h2>
             <button
-              onClick={Purchase}
-              className="mt-4 bg-[#64FFDA] px-6 py-3 rounded-xl text-[#0A192F] font-semibold shadow-md hover:bg-[#52e5c6] transition"
+              onClick={() => {setIsPurchasing((prev) => !prev)}}
+              className="mt-4 bg-green-600 text-white px-6 py-3 rounded-xl font-semibold shadow-md hover:bg-green-700 transition"
             >
               Proceed to Checkout
             </button>
