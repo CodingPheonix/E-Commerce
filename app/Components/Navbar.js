@@ -27,7 +27,7 @@ const Navbar = () => {
                     <Link href="/cart" className="hover:underline">Shop</Link>
                     <Link href="/categories" className="hover:underline">Categories</Link>
                     <Link href="/about" className="hover:underline">About Us</Link>
-                    <Link href="/contact" className="hover:underline">Contact</Link>
+                    <Link href="https://www.iamsayan.com/Contact" className="hover:underline">Contact</Link>
                 </div>
                 <div className='space-x-3'>
                     <button className='px-4 py-2 rounded-2xl bg-white border-green-600 border-2 hover:bg-green-600 hover:text-white active:bg-green-700'>Log In</button>
