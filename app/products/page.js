@@ -5,6 +5,7 @@ import electronics from "../json/electronics.json"
 import men from "../json/men's_clothing.json"
 import women from "../json/women's_clothing.json"
 import { useCart } from "../context/CartContext";
+import { toast, ToastContainer } from "react-toastify";
 
 export default function ProductsPage() {
 
@@ -14,6 +15,7 @@ export default function ProductsPage() {
 
     const { addToCart } = useCart();
 
+    
     // Fallback
     if (!type || !id) {
         return <div className="max-w-5xl mx-auto p-6">
@@ -23,7 +25,7 @@ export default function ProductsPage() {
     }
 
     let product = null;
-
+    
     if (type === "electronics") {
         product = electronics.filter(item => item.id == id)[0];
     }
@@ -34,9 +36,21 @@ export default function ProductsPage() {
         product = women.filter(item => item.id == id)[0];
     }
 
+    const onClickHandler = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        addToCart(product);
+
+        toast.success("Item added to cart!", {
+            position: "top-right",
+            autoClose: 2000,
+        });
+    }
+
 
     return (
         <div className="max-w-5xl mx-auto p-6">
+            <ToastContainer />
             <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col md:flex-row gap-8">
 
                 {/* LEFT — BIG IMAGE */}
@@ -66,9 +80,9 @@ export default function ProductsPage() {
                     </div>
 
                     <div className="mt-8 flex gap-4">
-                        <button 
-                        onClick={() => {addToCart(product)}}
-                        className="flex-1 bg-black text-white py-3 rounded-xl hover:bg-gray-800 transition"
+                        <button
+                            onClick={(event) => { onClickHandler(event) }}
+                            className="flex-1 bg-black text-white py-3 rounded-xl hover:bg-gray-800 transition"
                         >
                             Add to Cart
                         </button>
