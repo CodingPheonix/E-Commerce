@@ -7,6 +7,10 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 import { LiaShippingFastSolid } from "react-icons/lia";
 import { MdOutlinePayment } from "react-icons/md";
 import { MdSupportAgent } from "react-icons/md";
+import { FaFacebook } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa";
 
 export default function HomePage() {
 
@@ -141,64 +145,111 @@ export default function HomePage() {
       <section className="py-5 bg-slate-200">
         <h3 className="text-center text-4xl font-bold p-6">Ratings</h3>
 
-        <div class="max-w-4xl mx-auto bg-white rounded-2xl p-6 my-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="max-w-4xl mx-auto bg-white rounded-2xl p-6 my-8 grid grid-cols-1 md:grid-cols-2 gap-8">
 
-          <div class="flex flex-col items-center justify-center text-center">
-            <div class="text-6xl font-bold text-gray-900">4.5</div>
-            <div class="text-gray-500 text-sm">out of 5</div>
+          <div className="flex flex-col items-center justify-center text-center">
+            <div className="text-6xl font-bold text-gray-900">4.5</div>
+            <div className="text-gray-500 text-sm">out of 5</div>
 
-            <div class="flex justify-center gap-1 mt-2 text-yellow-400">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.178L12 18.896 4.664 23.175l1.402-8.178L.132 9.21l8.2-1.192z" /></svg>
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.178L12 18.896 4.664 23.175l1.402-8.178L.132 9.21l8.2-1.192z" /></svg>
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.178L12 18.896 4.664 23.175l1.402-8.178L.132 9.21l8.2-1.192z" /></svg>
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.178L12 18.896 4.664 23.175l1.402-8.178L.132 9.21l8.2-1.192z" /></svg>
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.178L12 18.896 4.664 23.175l1.402-8.178L.132 9.21l8.2-1.192z" /></svg>
+            <div className="flex justify-center gap-1 mt-2 text-yellow-400">
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.178L12 18.896 4.664 23.175l1.402-8.178L.132 9.21l8.2-1.192z" /></svg>
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.178L12 18.896 4.664 23.175l1.402-8.178L.132 9.21l8.2-1.192z" /></svg>
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.178L12 18.896 4.664 23.175l1.402-8.178L.132 9.21l8.2-1.192z" /></svg>
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.178L12 18.896 4.664 23.175l1.402-8.178L.132 9.21l8.2-1.192z" /></svg>
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.178L12 18.896 4.664 23.175l1.402-8.178L.132 9.21l8.2-1.192z" /></svg>
             </div>
 
-            <div class="text-gray-500 text-sm mt-1">1,234 ratings</div>
+            <div className="text-gray-500 text-sm mt-1">1,234 ratings</div>
           </div>
 
-          <div class="flex flex-col gap-3 justify-center">
-            <div class="flex items-center gap-3">
-              <span class="w-6 text-right font-semibold text-gray-800">5</span>
-              <div class="flex-1 bg-gray-200 rounded-full h-3 overflow-hidden">
-                <div class="bg-green-900 h-full w-[60%]"></div>
+          <div className="flex flex-col gap-3 justify-center">
+            <div className="flex items-center gap-3">
+              <span className="w-6 text-right font-semibold text-gray-800">5</span>
+              <div className="flex-1 bg-gray-200 rounded-full h-3 overflow-hidden">
+                <div className="bg-green-900 h-full w-[60%]"></div>
               </div>
-              <span class="w-12 text-right text-gray-500 text-sm">743</span>
+              <span className="w-12 text-right text-gray-500 text-sm">743</span>
             </div>
 
-            <div class="flex items-center gap-3">
-              <span class="w-6 text-right font-semibold text-gray-800">4</span>
-              <div class="flex-1 bg-gray-200 rounded-full h-3 overflow-hidden">
-                <div class="bg-green-800 h-full w-[30%]"></div>
+            <div className="flex items-center gap-3">
+              <span className="w-6 text-right font-semibold text-gray-800">4</span>
+              <div className="flex-1 bg-gray-200 rounded-full h-3 overflow-hidden">
+                <div className="bg-green-800 h-full w-[30%]"></div>
               </div>
-              <span class="w-12 text-right text-gray-500 text-sm">312</span>
+              <span className="w-12 text-right text-gray-500 text-sm">312</span>
             </div>
 
-            <div class="flex items-center gap-3">
-              <span class="w-6 text-right font-semibold text-gray-800">3</span>
-              <div class="flex-1 bg-gray-200 rounded-full h-3 overflow-hidden">
-                <div class="bg-green-700 h-full w-[12%]"></div>
+            <div className="flex items-center gap-3">
+              <span className="w-6 text-right font-semibold text-gray-800">3</span>
+              <div className="flex-1 bg-gray-200 rounded-full h-3 overflow-hidden">
+                <div className="bg-green-700 h-full w-[12%]"></div>
               </div>
-              <span class="w-12 text-right text-gray-500 text-sm">98</span>
+              <span className="w-12 text-right text-gray-500 text-sm">98</span>
             </div>
 
-            <div class="flex items-center gap-3">
-              <span class="w-6 text-right font-semibold text-gray-800">2</span>
-              <div class="flex-1 bg-gray-200 rounded-full h-3 overflow-hidden">
-                <div class="bg-green-600 h-full w-[5%]"></div>
+            <div className="flex items-center gap-3">
+              <span className="w-6 text-right font-semibold text-gray-800">2</span>
+              <div className="flex-1 bg-gray-200 rounded-full h-3 overflow-hidden">
+                <div className="bg-green-600 h-full w-[5%]"></div>
               </div>
-              <span class="w-12 text-right text-gray-500 text-sm">47</span>
+              <span className="w-12 text-right text-gray-500 text-sm">47</span>
             </div>
 
-            <div class="flex items-center gap-3">
-              <span class="w-6 text-right font-semibold text-gray-800">1</span>
-              <div class="flex-1 bg-gray-200 rounded-full h-3 overflow-hidden">
-                <div class="bg-green-500 h-full w-[3%]"></div>
+            <div className="flex items-center gap-3">
+              <span className="w-6 text-right font-semibold text-gray-800">1</span>
+              <div className="flex-1 bg-gray-200 rounded-full h-3 overflow-hidden">
+                <div className="bg-green-500 h-full w-[3%]"></div>
               </div>
-              <span class="w-12 text-right text-gray-500 text-sm">34</span>
+              <span className="w-12 text-right text-gray-500 text-sm">34</span>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Links  */}
+      <section className="flex justify-between items-center m-10">
+
+        <div className="w-1/5 p-4 flex flex-col gap-4">
+          <h3 className="font-semibold text-2xl">E-Commerce</h3>
+          <p>We have clothes that suits your style and you are proud to wear. From men to women</p>
+          <ul className='flex gap-4'>
+            <li className='hover: cursor-pointer p-2 border border-green-600 hover:bg-green-600 hover:text-white rounded-full'><FaFacebook /></li>
+            <li className='hover: cursor-pointer p-2 border border-green-600 hover:bg-green-600 hover:text-white rounded-full'><RiInstagramFill /></li>
+            <li className='hover: cursor-pointer p-2 border border-green-600 hover:bg-green-600 hover:text-white rounded-full'><FaXTwitter /></li>
+            <li className='hover: cursor-pointer p-2 border border-green-600 hover:bg-green-600 hover:text-white rounded-full'><FaYoutube /></li>
+          </ul>
+        </div>
+
+        <div className="w-1/5 p-4 flex flex-col gap-4">
+          <h4 className="text-xl font-semibold">Company</h4>
+          <Link href={'#'} className="text-sm text-slate-600">About</Link>
+          <Link href={'#'} className="text-sm text-slate-600">Features</Link>
+          <Link href={'#'} className="text-sm text-slate-600">Work</Link>
+          <Link href={'#'} className="text-sm text-slate-600">Career</Link>
+        </div>
+        
+        <div className="w-1/5 p-4 flex flex-col gap-4">
+          <h4 className="text-xl font-semibold">Help</h4>
+          <Link href={'#'} className="text-sm text-slate-600">Customer Support</Link>
+          <Link href={'#'} className="text-sm text-slate-600">Delivery Details</Link>
+          <Link href={'#'} className="text-sm text-slate-600">Terms and Conditions</Link>
+          <Link href={'#'} className="text-sm text-slate-600">Privacy Policy</Link>
+        </div>
+
+        <div className="w-1/5 p-4 flex flex-col gap-4">
+          <h4 className="text-xl font-semibold">FAQ</h4>
+          <Link href={'#'} className="text-sm text-slate-600">Account</Link>
+          <Link href={'#'} className="text-sm text-slate-600">Manage Deliveries</Link>
+          <Link href={'#'} className="text-sm text-slate-600">Orders</Link>
+          <Link href={'#'} className="text-sm text-slate-600">Payments</Link>
+        </div>
+
+        <div className="w-1/5 p-4 flex flex-col gap-4">
+          <h4 className="text-xl font-semibold">Resourses</h4>
+          <Link href={'#'} className="text-sm text-slate-600">Free Ebooks</Link>
+          <Link href={'#'} className="text-sm text-slate-600">Development Tutorial</Link>
+          <Link href={'#'} className="text-sm text-slate-600">Blog</Link>
+          <Link href={'#'} className="text-sm text-slate-600">Youtube Channel</Link>
         </div>
       </section>
     </main>
