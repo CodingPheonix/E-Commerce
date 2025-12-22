@@ -19,40 +19,44 @@ const Item_card = ({ item }) => {
     }
 
     return (
-        <div className="relative w-5/6 h-5/6 p-2 hover:shadow-lg transition overflow-hidden flex flex-col">
+        <div className="relative w-full h-[340px] p-2 hover:shadow-lg transition overflow-hidden flex flex-col bg-white rounded-xl">
             <ToastContainer />
 
-            {/* IMAGE — 60% height */}
-            <div className="h-[60%] w-full">
+            {/* IMAGE */}
+            <div className="h-40 w-full flex-shrink-0">
                 <Image
                     src={`/${item.image}.webp`}
                     alt={item.name}
-                    height={500}
-                    width={500}
-                    loading='lazy'
-                    className="w-full h-full object-contain p-3 bg-slate-100"
+                    height={400}
+                    width={400}
+                    loading="lazy"
+                    className="w-full h-full object-contain p-2 bg-slate-100 rounded-lg"
                 />
             </div>
 
-            {/* DETAILS — 25% height */}
-            <div className="h-[25%] px-4 py-2 flex flex-col justify-center">
-                <h3 className="text-black font-semibold adjust_text">{item.name}</h3>
-                <div className='flex justify-between items-center'>
-                    <p className="text-gray-600 adjust_text">${item.price}</p>
-                    <p className="text-yellow-500 adjust_text">⭐ {item.rating}</p>
+            {/* DETAILS */}
+            <div className="flex-1 px-2 py-1 flex flex-col justify-center">
+                <h3 className="text-black font-semibold text-sm line-clamp-2 leading-tight">
+                    {item.name}
+                </h3>
+
+                <div className="flex justify-between items-center text-sm mt-1">
+                    <p className="text-gray-600">${item.price}</p>
+                    <p className="text-yellow-500">⭐ {item.rating}</p>
                 </div>
             </div>
 
-            {/* ADD TO CART — 15% height */}
+            {/* ADD TO CART */}
             <button
-                onClick={(event) => {onClickHandler(event)}}
-                className="h-[15%] border text-white font-semibold bg-green-700 mx-auto my-2 w-[90%] flex items-center justify-center transition"
+                onClick={onClickHandler}
+                className="h-10 flex-shrink-0 bg-green-700 text-white font-semibold rounded-lg w-full transition hover:bg-green-800"
             >
                 Add to Cart
             </button>
-
         </div>
     );
+
+
 }
 
 export default Item_card
