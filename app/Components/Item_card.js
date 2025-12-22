@@ -19,23 +19,43 @@ const Item_card = ({ item }) => {
     }
 
     return (
-        <div className="relative w-full h-[340px] p-2 hover:shadow-lg transition overflow-hidden flex flex-col bg-white rounded-xl">
+        <div className="group w-full h-[340px] p-2 bg-white rounded-xl overflow-hidden transition-shadow duration-300 hover:shadow-lg">
             <ToastContainer />
 
-            {/* IMAGE */}
-            <div className="h-40 w-full flex-shrink-0">
+            {/* IMAGE WRAPPER */}
+            <div className="relative h-[70%] flex-shrink-0 overflow-hidden rounded-lg">
                 <Image
                     src={`/${item.image}.webp`}
                     alt={item.name}
                     height={400}
                     width={400}
                     loading="lazy"
-                    className="w-full h-full object-contain p-2 bg-slate-100 rounded-lg"
+                    className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                 />
+
+                {/* HOVER OVERLAY (for smoothness) */}
+                <div
+                    className="absolute inset-0 bg-black/10 opacity-0 transition-opacity duration-300 ease-out group-hover:opacity-100"
+                />
+
+                {/* ADD TO CART */}
+                <button
+                    onClick={onClickHandler}
+                    className="absolute bottom-4 left-1/2 -translate-x-1/2
+                                w-[90%] h-10
+                                bg-green-700 text-white font-semibold rounded-lg
+                                transition-all duration-300 ease-out
+                                opacity-0 translate-y-4
+                                group-hover:opacity-100 group-hover:translate-y-0
+                                hover:bg-green-800
+                            "
+                >
+                    Add to Cart
+                </button>
             </div>
 
             {/* DETAILS */}
-            <div className="flex-1 px-2 py-1 flex flex-col justify-center">
+            <div className="flex-1 px-2 py-2 flex flex-col justify-center">
                 <h3 className="text-black font-semibold text-sm line-clamp-2 leading-tight">
                     {item.name}
                 </h3>
@@ -45,16 +65,9 @@ const Item_card = ({ item }) => {
                     <p className="text-yellow-500">⭐ {item.rating}</p>
                 </div>
             </div>
-
-            {/* ADD TO CART */}
-            <button
-                onClick={onClickHandler}
-                className="h-10 flex-shrink-0 bg-green-700 text-white font-semibold rounded-lg w-full transition hover:bg-green-800"
-            >
-                Add to Cart
-            </button>
         </div>
     );
+
 
 
 }

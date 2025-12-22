@@ -80,7 +80,7 @@ const Hero = () => {
                 </div>
                 <div className="rounded-2xl overflow-hidden shadow-elevated aspect-[3/4]">
                   <img
-                    src="https://images.unsplash.com/photo-1617137968427-85924c800a22?w=400&h=600&fit=crop"
+                    src="/shop_by_cat-1.jpg"
                     alt="Men's fashion"
                     className="w-full h-full object-cover"
                   />

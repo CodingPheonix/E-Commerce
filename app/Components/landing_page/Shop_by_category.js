@@ -25,17 +25,17 @@ const Shop_by_category = () => {
                     {[
                         {
                             name: "Men's Collection",
-                            image: "https://images.unsplash.com/photo-1617137968427-85924c800a22?w=600&h=800&fit=crop",
+                            image: "/shop_by_cat-1.jpg",
                             link: "/products?type=men's clothing"
                         },
                         {
                             name: "Women's Collection",
-                            image: "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=600&h=800&fit=crop",
+                            image: "/shop_by_cat-2.jpg",
                             link: "/products?type=women's clothing"
                         },
                         {
                             name: "Electronics",
-                            image: "https://images.unsplash.com/photo-1468495244123-6c6c332eeece?w=600&h=800&fit=crop",
+                            image: "/shop_by_cat-3.jpg",
                             link: "/products?type=electronics"
                         }
                     ].map((category, index) => (
