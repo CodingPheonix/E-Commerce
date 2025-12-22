@@ -11,14 +11,14 @@ import { useCart } from '../context/CartContext';
 
 const Navbar = () => {
 
-    const {cart} = useCart();
+    const { cart } = useCart();
 
     const [count, setCount] = useState(cart.length);
 
     useEffect(() => {
-      setCount(cart.length);
+        setCount(cart.length);
     }, [cart])
-    
+
 
     return (
         <nav className="bg-white text-black shadow-md">
@@ -37,7 +37,9 @@ const Navbar = () => {
                 <div className="space-x-6">
                     <Link href="/" className="hover:underline">Home</Link>
                     <Link href="/cart" className="hover:underline relative pt-2 pr-2">Shop
-                        <span className='absolute top-0 right-0 h-4 w-4 text-center rounded-full bg-green-500 text-white text-xs'>{count}</span>
+                        <span className={`absolute top-0 right-0 h-4 w-4 text-center rounded-full bg-green-500 text-white text-xs ${count == 0 ? 'hidden' : 'block'}`}>
+                            {count}
+                        </span>
                     </Link>
                     <Link href="/categories" className="hover:underline">Categories</Link>
                     <Link href="/about" className="hover:underline">About Us</Link>
